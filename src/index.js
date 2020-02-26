@@ -37,7 +37,7 @@ export default {
               formattedValue = isNaN(parsedIntValue) ? '' : parsedIntValue;
               break;
           }
-          console.log(formattedValue);
+
           el.value = formattedValue;
         };
       }
@@ -46,7 +46,6 @@ export default {
   initMaxLength(el, options) {
     if (options.maxLength !== null) {
       el.setAttribute('maxlength', options.maxLength);
-      console.log(el);
     }
   }
 }
